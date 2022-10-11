@@ -40,8 +40,6 @@ import streamlit as st
 import os.path
 st.title("Welcome to SellMyCar!")
  
-audio_file = open('/Users/huyduc/Documents/Notebooks/Final Project/WebApp/voicebooking-speech.m4a', 'rb')
-audio_bytes = audio_file.read()
 manufacturer_list=['acura','alfa-romeo','audi','bmw','buick','cadillac','chevrolet','chrysler','dodge','ford','gmc','honda', 'hyundai','infiniti','jaguar','jeep','kia','lexus','lincoln','mazda','mercedes-benz','mercury','mini','mitsubishi','nissan',
 'pontiac','porsche','ram','rover','saturn','subaru','toyota','volkswagen','volvo']
 
@@ -54,8 +52,7 @@ ord_drive_list= ['fwd', 'rwd', '4wd']
 long_drive=["Front-Wheel-Drive","Rear-Wheel-Drive","4-Wheel-Drive"]
 ord_size_list = ['compact','mid-size','full-size', 'sub-compact' ]
 ord_paint_color = ['white', 'blue', 'red', 'black', 'silver', 'grey', 'none', 'brown',
-                   'yellow', 'orange', 'green', 'custom', 'purple']
-st.audio(audio_bytes, format='audio/wav')
+                   'yellow', 'orange', 'green', 'custom', 'purple']s
 types=['pickup', 'truck', 'other', 'coupe', 'SUV', 'hatchback','mini-van', 'sedan', 'offroad', 'bus', 'van', 'convertible','wagon']
 
 colu1, colu2 = st.columns(2)
